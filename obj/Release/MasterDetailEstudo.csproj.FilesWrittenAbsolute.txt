@@ -1,0 +1,11 @@
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/obj/Release/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/obj/Release/MasterDetailEstudo.MD.xaml
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/obj/Release/MasterDetailEstudo.LeituraEmail.xaml
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/obj/Release/MD.xaml.g.cs
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/obj/Release/LeituraEmail.xaml.g.cs
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/bin/Release/MasterDetailEstudo.dll.mdb
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/bin/Release/MasterDetailEstudo.dll
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/obj/Release/MasterDetailEstudo.dll
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/obj/Release/MasterDetailEstudo.dll.mdb
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/bin/Release/Xamarin.Forms.Core.dll
+/Users/User/Projects/MasterDetailEstudo/MasterDetailEstudo/bin/Release/Xamarin.Forms.Xaml.dll

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="MasterDetailEstudo.MD">
+
+<MasterDetailPage.Master>
+		<ContentPage Title="Master" BackgroundColor="#CCCCCC" >
+
+			<ContentPage.Padding>
+		    	<OnPlatform x:TypeArguments="Thickness">
+			        <OnPlatform.iOS>
+			          5, 20, 0, 0
+			        </OnPlatform.iOS>
+			        <OnPlatform.Android>
+			          0, 0, 0, 0
+			        </OnPlatform.Android>
+			        <OnPlatform.WinPhone>
+			          0, 0, 0, 0
+			        </OnPlatform.WinPhone>
+		      	</OnPlatform>
+			</ContentPage.Padding>
+
+			<StackLayout Padding="20">
+				<Label Text="meu@email.com.br" 				       
+					   VerticalOptions="CenterAndExpand"
+				       HorizontalOptions="CenterAndExpand"
+				       TextColor="#FFFFFF"
+				       Font="24"/>
+				<ListView BackgroundColor="#CCCCCC" ItemsSource="{Binding Folders}" SeparatorVisibility="None"></ListView>
+			</StackLayout>
+		</ContentPage>
+	</MasterDetailPage.Master>
+
+
+	<MasterDetailPage.Detail>
+		<ContentPage BackgroundColor="White">
+
+			<ContentPage.Padding>
+		    	<OnPlatform x:TypeArguments="Thickness">
+			        <OnPlatform.iOS>
+			          0, 20, 0, 0
+			        </OnPlatform.iOS>
+			        <OnPlatform.Android>
+			          0, 0, 0, 0
+			        </OnPlatform.Android>
+			        <OnPlatform.WinPhone>
+			          0, 0, 0, 0
+			        </OnPlatform.WinPhone>
+		      	</OnPlatform>
+			</ContentPage.Padding>
+
+			<StackLayout>
+				<StackLayout Orientation="Horizontal" BackgroundColor="Accent">
+
+				<Label Text="{Binding EmailsCount}" 
+				       VerticalOptions="CenterAndExpand"
+				       HorizontalOptions="CenterAndExpand"
+				       TextColor="#FFFFFF"
+				       Font="24"
+				       />
+
+				</StackLayout>
+
+				<ListView ItemsSource="{Binding Emails}" x:Name="ListaEmails">
+						  <ListView.ItemTemplate>
+								<DataTemplate>
+									<ViewCell>
+										<Grid>
+											<Grid.RowDefinitions>
+												<RowDefinition Height="*" />
+												<RowDefinition Height="*" />
+											</Grid.RowDefinitions>
+
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="10" />
+												<ColumnDefinition Width="*" />
+												<ColumnDefinition Width="60" />
+											</Grid.ColumnDefinitions>
+
+											<Label Grid.Row="0"
+											       Grid.Column="1" 
+											       Text="{Binding From}"
+											       FontAttributes="Bold"
+											       Font="14"
+											       VerticalOptions="CenterAndExpand"
+											       HorizontalOptions="StartAndExpand" />
+
+											<Label Grid.Row="1"
+											       Grid.Column="1" 
+											       Text="{Binding Subject}"
+											       TextColor="Gray"
+											       Font="12"
+											       VerticalOptions="CenterAndExpand"
+											       HorizontalOptions="StartAndExpand" />
+
+
+											<Label Grid.RowSpan="2"
+											       Grid.Column="2" 
+											       Text="{Binding ReceiveAt}"
+											       Font="12"
+											       VerticalOptions="CenterAndExpand"
+											       HorizontalOptions="CenterAndExpand" />
+										</Grid>
+									</ViewCell>
+								</DataTemplate>
+						  </ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+		</ContentPage>
+	</MasterDetailPage.Detail>
+</MasterDetailPage>
